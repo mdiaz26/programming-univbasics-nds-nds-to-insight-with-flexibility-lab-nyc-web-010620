@@ -80,11 +80,11 @@ def gross_per_studio(collection)
     movie_info = collection[movie_index]
     studio_name = movie_info[:studio]
     specific_sum = movie_info[:worldwide_gross]
-    if hash[:"#{studio_name}"]
-      hash[:"#{studio_name}"] += specific_sum
+    if hash["#{studio_name}"]
+      hash["#{studio_name}"] += specific_sum
       
     else
-      hash[:"#{studio_name}"] = specific_sum
+      hash["#{studio_name}"] = specific_sum
     end
   movie_index += 1
   end
